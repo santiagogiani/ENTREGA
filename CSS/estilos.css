@@ -1,4 +1,5 @@
 /* CSS PERSONALIZADO*/
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&family=Inter:wght@500&family=Montserrat:ital,wght@0,600;0,700;0,900;1,900&display=swap');
 
 body {
 
@@ -18,7 +19,8 @@ header img {
 
 p {
     color: rgb(45, 3, 3);
-    font-size: 14px;
+    font-size: 15px;
+    line-height: 1.6em;
 }
 
 nav ul {
@@ -41,6 +43,10 @@ h2 {
 h3 {
     font-size: 2em;
     font-family: 'Alfa Slab One', serif;
+}
+h4 {
+    font-size: 1.6em;
+    line-height: 1.6em;
 }
 
 footer {
@@ -72,7 +78,20 @@ footer a:hover {
     padding: 100px;
     text-align: left;
 }
-
+#bajada-acerca {
+    padding-top: 40px;
+}
+#cv ul li {
+    margin-top: 10px;
+}
+#cv ul li b{
+    font-weight: 700;
+    color: #e50404;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
 .card {
     border: none !important;
 }
