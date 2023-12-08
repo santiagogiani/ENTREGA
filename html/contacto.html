@@ -2,56 +2,100 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giani.uy</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto Giani.uy</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/CSS/estilos.css">
-</head>
-
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+ <head>
 <body>
-    <header>
-        <nav>
+     <!--HEADER-->
+     <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container-fluid">
             <a href="/index.html"><img src="/imgs/GIANI.png" alt="Logo Giani"></a>
-            <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/html/portfolio.html">Portfolio</a></li>
-                <li><a href="/html/acerca.html">Acerca de</a></li>
-                <li><a href="/html/tienda.html">Tienda</a></li>
-                <li><a href="/html/blog.html">Blog</a></li>
-            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/html/acerca.html">Acerca de</a>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="/html/tienda.html">Tienda</a></li>
+                <li class="nav-item"><a class="nav-link" href="/html/blog.html">Blog</a></li>
+                <li class="nav-link active" aria-current="page" href="/html/contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
         </nav>
-    </header>
+      </header>
     <main>
         <!--Contacto-->
         <section>
-            <h1>Contacto</h1>
-            <img src="/imgs/contacto.png" alt="Contacto Santiago Giani">
-            <h2>Tenete ergo quod si servitus quae natura liber, et aliena tua tunc impeditur. Dolebis, et turbabuntur,
-                et invenietis, cum culpa tam dis hominibusque.
-                Quod si tibi tantum sit propria et aliena quale sit, nemo unquam vel invitum te continebis.</h2>
+            <div class="container">
+                <div class="row">
+                <div class="col col-lg-6 col-md-6 col-sm-12">
+                    <div class=" my-element mx-auto text-center">
+                    <img src="/imgs/contacto.png" alt="Contacto Santiago Giani"><br>
+                    <p><i>Lorem ipsum dolor sit amet.</i> Consectetur adipisicing 2023.</p>
+                    </div>
+                </div>
+                    <div class="col col-lg-6 col-md-6 col-sm-12">
+                        <div class=" my-element mx-auto text-center">
+                        <h1>Contacto</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet, provident perferendis.
+                            Vero at quos
+                            distinctio natus, voluptas, reiciendis debitis quibusdam consectetur
+                            dignissimos ipsa perferendis! Accusamus libero illum neque placeat commodi? Lorem ipsum
+                            dolor, sit amet</p>
+                        <!--Formulario-->
+                        <form action="/enviar-mensaje" method="POST">
+                            <label for="nombre">Nombre:</label><br>
+                            <input type="text" id="nombre" name="nombre" /><br />
+                            <label for="email">Email:</label><br />
+                            <input type="email" id="email" name="email" /><br />
+                            <label for="mensaje">Mensaje:</label><br />
+                            <textarea id="mensaje" name="mensaje"></textarea><br />
+                            <input type="submit" value="Enviar mensaje" />
+                        </form>
+                        </div>
+                  </div>
+            </div>           
         </section>
-        <!--Formulario-->
-        <section>
-            <form action="/enviar-mensaje" method="POST">
-                <label for="nombre">Nombre:</label><br>
-                <input type="text" id="nombre" name="nombre" /><br />
-                <label for="email">Email:</label><br />
-                <input type="email" id="email" name="email" /><br />
-                <label for="mensaje">Mensaje:</label><br />
-                <textarea id="mensaje" name="mensaje"></textarea><br />
-                <input type="submit" value="Enviar mensaje" />
-            </form>
-        </section>
+
     </main>
-    <footer>
-        <img src="/imgs/logo_footer.png" alt="logo footer Giani">
-        <h4>INSTAGRAM</h4><br>
-        <h4>BEHANCE</h4><br>
-        <p>2023</p>
-        <h4>EMAIL</h4>
-        <p><a href="#">Back to TOP</a></p>
-    </footer>
+<!--FOOTER-->
+<footer>
+    <div class="container">
+      <div class="row">
+        <div class="col col-lg-3 col-md-3 col-sm-12">
+          <img src="/imgs/logo_footer.png" alt="logo footer Giani">
+          <h4><a href="https://www.instagram.com/santiagogiani/">INSTAGRAM</a></h4><br>
+          <h4><a href="https://www.behance.net/santiagogiani">BEHANCE</a></h4><br>
+          <h4><a href="#">EMAIL</a></h4>
+          <p>2023</p>
+        </div>
+        <div class="col col-lg-3 col-md-3 col-sm-12 ms-auto">  
+          <button type="button" class="btn btn-dark btn-circle btn-xl"><a href="#">Back to TOP</a></button>
+        </div>
+      </div>  
+    </div>    
+  </footer>
 </body>
 
 </html>
