@@ -1,0 +1,211 @@
+/* IMPORTACIONES */
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&family=Inter:wght@500&family=Montserrat:ital,wght@0,600;0,700;0,900;1,900&display=swap');
+
+/* COLORES */
+
+$redpower: #fc0000;
+$softerwhite: #fafafa;
+$whiter: #ffffff;
+$palewhite: #f7f8f8;
+$negroni: #202020;
+
+
+
+/* SCSS */
+
+body {
+    color: rgb(56, 56, 56);
+    font-family: 'Inter', sans-serif;
+    background-color: $softerwhite;
+}
+
+section {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+
+header img {
+    padding-left: 270px;
+}
+
+p {
+    color: rgb(45, 3, 3);
+    font-size: 15px;
+    line-height: 1.6em;
+}
+
+nav ul {
+    font-size: 1.3em;
+    font-weight: 600;
+    a {
+        color: $negroni;
+    }
+}
+
+h1 {
+    font-size: 3em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 2em;
+    font-family: 'Alfa Slab One', serif;
+}
+
+h4 {
+    font-size: 1.6em;
+    line-height: 1.6em;
+}
+
+footer {
+    background-color: $redpower;
+    color: $negroni;
+    padding: 40px;
+    
+    img {
+        margin-bottom: 30px;
+    }
+    a {
+        color: $negroni;
+        text-decoration: none;
+    }
+    a:hover {
+        color: $whiter;
+    }
+}
+
+.carousel-inner p {
+    color: aliceblue;
+}
+
+#bajada-home {
+    padding: 100px;
+    text-align: left;
+}
+
+#bajada-acerca {
+    padding-top: 40px;
+}
+
+#cv ul li {
+    margin-top: 10px;
+    
+    ul li b {
+        font-weight: 700;
+        color: redpower;
+    }
+}
+
+
+#portfolio {
+    background-color: $whiter;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.card {
+    border: none !important;
+}
+
+.btn-primary {
+    --bs-btn-bg: #343a40;
+    --bs-btn-hover-bg: redpower;
+    border: none;
+}
+
+footer button {
+    padding: 50px;
+    a {
+        color: $whiter;
+    }
+}
+
+.btn-circle.btn-xl {
+    width: 100px;
+    height: 100px;
+    padding: 13px 18px;
+    border-radius: 60px;
+    font-size: 15px;
+    text-align: center;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        padding-right: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+    header img {
+        padding-left: 10px;
+    }
+
+    .navbar-collapse {
+        background: redpower;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: aliceblue;
+    }
+
+    .navbar-nav .nav-link {
+        color: $palewhite;
+    }
+
+    .nav-link.visited {
+        color: $palewhite !important;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: $whiter;
+    }
+}
+
+@media (max-width: 430px) {
+    header img {
+        padding-left: 10px;
+    }
+
+    .navbar-collapse {
+        background: redpower;
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .navbar-nav .nav-link.active,
+    .navbar-nav .nav-link.show {
+        color: aliceblue;
+    }
+
+    .navbar-nav .nav-link {
+        color: $palewhite;
+    }
+
+    .nav-link.visited {
+        color: $palewhite !important;
+    }
+    
+
+    .navbar-nav .nav-link:hover {
+        color: $whiter
+    }
+
+    .carousel {
+        display: none;
+    }
+
+    #bajada-home {
+        padding: 10px;
+    }
+}
