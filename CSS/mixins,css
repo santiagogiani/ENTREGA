@@ -1,0 +1,19 @@
+.tarjeta01 {
+  border: none !important;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: #eeeeee;
+  color: #c70202;
+}
+
+.tarjeta02 {
+  border: none !important;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  background-color: #f2f2f2;
+  color: #c70202;
+}
+
+/*# sourceMappingURL=mixins,css.map */

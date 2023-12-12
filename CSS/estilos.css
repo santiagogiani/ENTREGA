@@ -50,7 +50,7 @@ h4 {
 }
 
 footer {
-  background-color: #fc0000;
+  background-image: linear-gradient(to top, #cf1717, #fc0000);
   color: #202020;
   padding: 40px;
 }
@@ -63,6 +63,16 @@ footer a {
 }
 footer a:hover {
   color: #ffffff;
+}
+
+#backtotop {
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+}
+
+#backtotop:hover {
+  -webkit-transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .carousel-inner p {
@@ -95,13 +105,9 @@ ul {
   padding-left: 0;
 }
 
-.card {
-  border: none !important;
-}
-
 .btn-primary {
   --bs-btn-bg: #343a40;
-  --bs-btn-hover-bg: redpower;
+  --bs-btn-hover-bg: #FF0000;
   border: none;
 }
 
@@ -119,6 +125,23 @@ footer button a {
   border-radius: 60px;
   font-size: 15px;
   text-align: center;
+}
+
+.card {
+  border: none !important;
+}
+
+form textarea {
+  margin-bottom: px;
+  width: 100%;
+  border: none;
+  height: 180px;
+  background-color: #dadada;
+  padding: 10px;
+}
+
+.movido {
+  transform: rotate(20deg);
 }
 
 /* MEDIA QUERIES */
@@ -150,6 +173,16 @@ footer button a {
     color: #ffffff;
   }
 }
+.tarjeta01 img {
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+.tarjeta02 img {
+  width: 270px;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 430px) {
   header img {
     padding-left: 10px;

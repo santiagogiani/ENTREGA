@@ -1,0 +1,16 @@
+@mixin tarjeta ($fondo) {
+    border: none !important;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: $fondo;
+    color: #c70202;
+    
+}
+
+.tarjeta01 {
+    @include tarjeta(#eeeeee);
+}
+.tarjeta02 {
+    @include tarjeta(#f2f2f2);
+}

@@ -1,13 +1,16 @@
+
 /* IMPORTACIONES */
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=DM+Serif+Display:ital@0;1&family=Inter:wght@500&family=Montserrat:ital,wght@0,600;0,700;0,900;1,900&display=swap');
 
 /* COLORES */
-
 $redpower: #fc0000;
+$redlow: #cf1717;
 $softerwhite: #fafafa;
 $whiter: #ffffff;
 $palewhite: #f7f8f8;
 $negroni: #202020;
+$gris01: #c2c2c2;
+$girs02: #e9e9e9;
 
 
 
@@ -61,7 +64,7 @@ h4 {
 }
 
 footer {
-    background-color: $redpower;
+    background-image: linear-gradient(to top, $redlow, $redpower );
     color: $negroni;
     padding: 40px;
     
@@ -70,13 +73,20 @@ footer {
     }
     a {
         color: $negroni;
-        text-decoration: none;
+        text-decoration: none
     }
     a:hover {
         color: $whiter;
     }
 }
-
+#backtotop {
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+#backtotop:hover {
+    -webkit-transform: translateY(20px);
+  transform: translateY(20px);
+}
 .carousel-inner p {
     color: aliceblue;
 }
@@ -109,14 +119,11 @@ ul {
     padding-left: 0;
 }
 
-.card {
-    border: none !important;
-}
-
 .btn-primary {
     --bs-btn-bg: #343a40;
-    --bs-btn-hover-bg: redpower;
+    --bs-btn-hover-bg: #FF0000;
     border: none;
+    
 }
 
 footer button {
@@ -134,7 +141,21 @@ footer button {
     font-size: 15px;
     text-align: center;
 }
+.card {
+    border: none !important;
+}
+form textarea {
+margin-bottom: px;
+width: 100%;
+border: none;
+height: 180px;
+background-color: #dadada;
+padding: 10px;
 
+}
+.movido {
+    transform: rotate(20deg);
+}
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 992px) {
@@ -169,6 +190,18 @@ footer button {
 
     .navbar-nav .nav-link:hover {
         color: $whiter;
+    }
+}
+.tarjeta01 {
+    img {
+        width: 270px;
+        margin-bottom: 20px;
+    }
+}
+.tarjeta02 {
+    img {
+        width: 270px;
+        margin-bottom: 20px;
     }
 }
 
