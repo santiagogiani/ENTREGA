@@ -188,19 +188,19 @@ form textarea {
     padding-left: 10px;
   }
   .navbar-collapse {
-    background: #fbb4b4;
+    background: #ff0000;
     padding: 10px;
     margin-top: 10px;
   }
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show {
-    color: rgb(254, 5, 14);
+    color: rgb(31, 30, 30);
   }
   .navbar-nav .nav-link {
-    color: #cf1717;
+    color: #fafafa;
   }
   .nav-link.visited {
-    color: #cf1717;
+    color: #fafafa;
   }
   .navbar-nav .nav-link:hover {
     color: #ffffff;
