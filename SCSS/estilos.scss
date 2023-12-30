@@ -211,22 +211,22 @@ padding: 10px;
     }
 
     .navbar-collapse {
-        background: redpower;
+        background: #fbb4b4;
         padding: 10px;
         margin-top: 10px;
     }
 
     .navbar-nav .nav-link.active,
     .navbar-nav .nav-link.show {
-        color: aliceblue;
+        color: rgb(254, 5, 14);
     }
 
     .navbar-nav .nav-link {
-        color: $palewhite;
+        color: #cf1717;
     }
 
     .nav-link.visited {
-        color: $palewhite !important;
+       color: #cf1717;
     }
     
 
